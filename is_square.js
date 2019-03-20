@@ -8,6 +8,15 @@ function Square(A, B, C, D){
 
 //Write Your Code Below This Line
 
+Square.prototype.isSquare = function() {
+    if(this.A === this.B && this.B === this.C && this.C === this.D){
+        console.log("true");
+    }
+    else{
+        console.log("false");
+    }
+}
+
 //Don't Edit Code Below This Line
 function processData(input) {
     var sq1 = new Square(input[0], input[1], input[2], input[3]);
